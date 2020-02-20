@@ -52,6 +52,11 @@ table {
 * {
     box-sizing: border-box;
 }
+// This ia a Mixin
+.display(){
+	display:flex;
+	flex-direction:column;
+}
 @main-color:#AFEEEE;
 html, body {
 	height: 100%;
@@ -128,8 +133,7 @@ table{
 	}
 }
 .contact-content{
-	display:flex;
-	flex-direction:column;
+	.display();
 	text-decoration: none;
 	address{
 		font-size:2rem;
@@ -146,8 +150,7 @@ footer{
 		width:500px;
 	}
 	.middle-content{
-		display:flex;
-		flex-direction:column;
+		.display();
 		width:100%;
 		align-items: center;
 	}
